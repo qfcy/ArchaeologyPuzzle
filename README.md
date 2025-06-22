@@ -24,6 +24,12 @@
 - 判断敌人是否已经看到玩家的部分使用Bresenham算法（O(m+n)）
 - 渲染墙壁部分每行/每列扫描整个二维数组地图，找出墙壁边界位置，避免重复渲染墙壁内部（时间复杂度O(m*n)）
 
+**构建和运行**
+
+Windows中，安装MinGW并加入环境变量PATH后，在仓库根目录运行`build.bat`编译，再运行`bin\ArchaeologyPuzzle`即可启动游戏。  
+Linux中，安装gcc后，在仓库根目录运行`./build`编译，再运行`bin/ArchaeologyPuzzle`即可。  
+要求编译器已包含`GL/gl.h`（Linux还需`alsa/asoundlib.h`），stb image等库已在[include](include)目录装好，无需手动安装。  
+
 ## 2.游戏截图
 
 开始界面：  
@@ -115,17 +121,23 @@ Additionally, players can customize levels and textures to create their own MODs
 The game uses modern C++ with OpenGL for graphics rendering and stb_image library for texture loading, developed in VSCode IDE.  
 Cross-platform compatibility (Windows/Linux) is achieved through gcc/MinGW compilers, implementing platform-specific solutions like PlaySound API for Windows and dr_wav for Linux audio playback.  
 
-**MVC Architecture**  
+**MVC Architecture**
 
 Model: Handles game logic including enemy pathfinding, attacks, damage calculation, and item collection.  
 View: Implements scene rendering using OpenGL.  
 Controller: Processes player inputs (keyboard/mouse), relays commands to the model, and manages level transitions.  
 
-**Algorithms**  
+**Algorithms**
 
 - A\* algorithm for enemy pathfinding (Time complexity: O(m*n) for maze dimensions m×n)  
 - Bresenham's algorithm for enemy vision detection (O(m+n))  
 - Optimized wall rendering by scanning 2D map arrays to identify boundary edges, avoiding redundant inner-wall rendering (O(m*n))  
+
+**Build and Run**
+
+On **Windows**, after installing MinGW and adding it to the `PATH` environment variable, run `build.bat` in the root directory of the repository to compile the project. Then, run `bin\ArchaeologyPuzzle` to start the game.
+On **Linux**, after installing `gcc`, run `./build` in the root directory to compile the project. Then, run `bin/ArchaeologyPuzzle` to start the game.
+The compiler is expected to include `GL/gl.h` (also requires `alsa/asoundlib.h` on Linux), and libraries like stb_image are already included in the [include](include) directory, so no manual installation is needed.
 
 ## 2. Screenshots
 
