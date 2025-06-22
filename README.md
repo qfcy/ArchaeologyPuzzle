@@ -174,7 +174,7 @@ Defeating it grants 3× base score (30 points).
 Five types (armillary sphere, compass, clock, incense burner, abacus). Collecting any grants 10 points.  
 
 ### (2) Gourd
-Restores 2 HP (up to max 20). Unusable at full health. Player-exclusive.  
+Restores 2 HP (up to max 20). Unusable at full health and player-exclusive.  
 
 ### (3) Rising Pillar
 Gray-colored. After player passage, walls rise to block pursuing enemies. Grants 10 points.  
@@ -186,7 +186,7 @@ Orange-colored. Inflicts 1 damage per game tick (0.05s) to any standing entity, 
 
 ## 6. Game Mechanics
 ### (1) Game Tick
-Each tick lasts 0.05s (default 60 fps max). Processes entity logic and removes unnecessary entities per tick.  
+Each tick lasts 0.05 seconds (default max 60 fps) and processes entity logic while removing unnecessary entities.  
 
 ### (2) Post-Hit Immunity  
 Inspired by [Minecraft Wiki](https://minecraft.wiki/w/Damage#Invulnerability_timer), entities gain 10-tick (0.5s) immunity after taking damage, shown as red tint.  
