@@ -1,0 +1,73 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "buildWinRes",
+            "type": "shell",
+            "command": "windres",
+            "args": [
+                "game.rc",
+                "-o",
+                "bin/game_res.o"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Generate resource files"
+        },
+        {
+            "label": "build-win32",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "game.cpp",
+                "${workspaceFolder}/bin/game_res.o",
+                "-o",
+                "${workspaceFolder}/bin/ArchaeologyPuzzle",
+                "-g",//"-s",
+                "-Wall",
+                "-I${workspaceFolder}/include",
+                "-L${workspaceFolder}/lib",
+                "-lfreeglut",
+                "-lopengl32",
+                "-lglu32",
+                "-lwinmm",
+                "-l:stb_image.a"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            //"dependsOn": "buildWinRes",
+            "detail": "Compile and generate bin/game.exe"
+        },
+        {
+            "label": "build-linux",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "game.cpp",
+                "-o",
+                "${workspaceFolder}/bin/ArchaeologyPuzzle",
+                "-g",//"-s",
+                "-Wall",
+                "-I${workspaceFolder}/include",
+                "-L.","-lGL","-lGLU","-lasound",
+                "-l:lib/libglut.so","-l:lib/libstbimage.so","-l:lib/libdrwav.so"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compile and generate bin/game"
+        }
+    ]
+}

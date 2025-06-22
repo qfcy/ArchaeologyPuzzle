@@ -1,0 +1,11 @@
+10 1
+P _ _ _ P W W W W P
+_ S _ 2 W W W W W W
+_ _ W _ R _ W _ W W
+_ _ W _ W W W R W W
+P _ W _ W _ r _ W P
+W o W _ W _ W _ W W
+W 4 W o _ R W _ L W
+W W W W W W W 4 L L
+W _ R _ _ _ _ _ _ D
+P W W L P L L L L P

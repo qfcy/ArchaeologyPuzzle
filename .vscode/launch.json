@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(gdb) ArchaeologyPuzzle",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "windows": {
+        "program": "${workspaceFolder}/bin/ArchaeologyPuzzle.exe",
+        "miDebuggerPath": "E:\\Progs\\gcc\\mingw64\\bin\\gdb.exe",
+        "preLaunchTask": "build-win32",
+      },
+      "linux": {
+        "program": "${workspaceFolder}/bin/ArchaeologyPuzzle",
+        "miDebuggerPath": "/usr/bin/gdb",
+        "preLaunchTask": "build-linux",
+      },
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Intel Syntax Disassembly",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

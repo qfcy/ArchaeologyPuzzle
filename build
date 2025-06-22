@@ -1,0 +1,3 @@
+g++ libs/stb_image/stbimage_lib.cpp -o lib/libstbimage.so -shared -fPIC -O2 -s -Iinclude
+g++ libs/dr_wav/drwav_lib.cpp -o lib/libdrwav.so -shared -fPIC -O2 -s -Iinclude
+g++ game.cpp -o bin/ArchaeologyPuzzle -s -O2 -Wall -Wno-reorder -Iinclude -L. -lGL -lGLU -lasound -l:lib/libglut.so -l:lib/libstbimage.so -l:lib/libdrwav.so $@

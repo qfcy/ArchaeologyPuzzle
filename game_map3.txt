@@ -1,0 +1,20 @@
+10 3
+W W W W W W W W W W W W W W W W W W W
+W S W _ W r _ _ W _ _ _ _ _ 4 _ _ _ W
+W _ W _ W _ W W W _ W _ _ W W W W _ W
+W _ _ _ W R W _ _ _ W _ _ r W _ _ o W
+W W W _ W _ _ _ W W W W _ _ _ W W _ W
+W _ _ _ W r _ 2 _ _ _ _ W W W _ W W W
+W _ a _ 3 W W W W W W W W _ _ _ _ _ W
+W _ _ o _ _ _ _ _ _ R _ W _ W W _ _ W
+W W W W W W W W W _ r _ W _ _ o W _ W
+W _ _ r r _ _ _ _ _ W _ W W W W W _ W
+W _ W W W W W _ _ r W _ R _ _ _ _ 2 W
+W _ W _ _ _ W 3 _ _ W _ _ _ o _ _ r W
+W _ W _ W _ _ _ W W W W W _ _ _ 4 r W
+W _ W _ W _ o _ W _ _ _ W _ L L L L W
+W _ W _ W _ _ _ W r W _ W _ L _ _ _ W
+W R W _ _ _ W _ _ r W _ W _ L _ o 3 W
+W _ W W W _ W W W W W W W _ L _ _ b W
+W _ _ 4 W _ _ R _ r r _ _ _ w _ _ D W
+W W W W W W W W W W W W W W W W W W W
